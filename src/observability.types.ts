@@ -13,7 +13,7 @@ type CloudWatchObservabilityOptions = {
 }
 
 /**
- * Dev/standalone adapter: metrics are logged through
+ * Local adapter: metrics are logged through
  * `@turystack/nestjs-logger` instead of being shipped anywhere.
  */
 type LocalObservabilityOptions = {

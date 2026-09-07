@@ -54,7 +54,7 @@ import { configSchema } from './config.schema.js'
 export class AppModule {}
 ```
 
-- `register` also accepts plain options — `{ adapter: 'local' }` for dev/standalone runs logs metrics instead of emitting EMF.
+- `register` also accepts plain options — `{ adapter: 'local' }` for local runs logs metrics instead of emitting EMF.
 - `defaultDimensions` are merged into every metric and form the first EMF dimension set.
 - The module is global: inject `MetricsService` anywhere, no imports needed.
 
@@ -108,4 +108,4 @@ Emission is abstracted behind `IObservabilityAdapter` (`record(input): void` —
 | Adapter | Notes |
 |---|---|
 | `'cloudwatch'` | EMF: one bare JSON line per metric on stdout; requires `cloudwatch.namespace`; no AWS SDK |
-| `'local'` | Logs metrics via `@turystack/nestjs-logger` under the `Metrics` context — dev/standalone |
+| `'local'` | Logs metrics via `@turystack/nestjs-logger` under the `Metrics` context — local development |

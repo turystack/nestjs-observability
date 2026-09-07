@@ -4,7 +4,7 @@ import type { IObservabilityAdapter } from '@/observability.adapter.interface.js
 import type { MetricInput } from '@/observability.types.js'
 
 /**
- * Dev/standalone adapter: metrics are logged through
+ * Local adapter: metrics are logged through
  * `@turystack/nestjs-logger` instead of being shipped to a backend.
  * Errors are swallowed — metrics never throw.
  */
