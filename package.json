@@ -2,7 +2,7 @@
 	"name": "@turystack/nestjs-observability",
 	"description": "CloudWatch-first metrics for NestJS via EMF: fire-and-forget counters, gauges, durations, and a @Measure decorator. Local adapter built-in.",
 	"private": false,
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "module",
 	"packageManager": "pnpm@10.12.3",
 	"sideEffects": false,
