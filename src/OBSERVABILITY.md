@@ -9,7 +9,7 @@ CloudWatch-first metrics for NestJS via EMF (Embedded Metric Format): fire-and-f
 - **Lambda** works natively: stdout goes to CloudWatch Logs, and metric extraction happens automatically.
 - **ECS/EC2** requires the CloudWatch Agent or Fluent Bit shipping container stdout to CloudWatch Logs — the extraction is the same once the lines arrive.
 
-**Dimension cardinality rule.** Every distinct dimension-value combination is a separate CloudWatch metric (and a separate charge). Dimensions are for low-cardinality slicing — `env`, `service`, `domain`, `operation`, `status` — **never ids** (userId, orderId, requestId). Ids belong in logs, not dimensions.
+**Dimension cardinality rule.** Every distinct dimension-value combination is a separate CloudWatch metric (and a separate charge). Dimensions are for low-cardinality slicing — `env`, `service`, `domain`, `operation`, `status` — **never ids** (`user_id`, `order_id`, `request_id`). Ids belong in logs, not dimensions.
 
 ## Setup
 
